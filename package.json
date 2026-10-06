@@ -20,5 +20,10 @@
   "dependencies": {
     "aws-cdk-lib": "^2.269.0",
     "constructs": "^10.5.0"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "@swc/core@1.16.13": true,
+    "esbuild@0.28.2": true
   }
 }
