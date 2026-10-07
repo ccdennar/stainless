@@ -11,8 +11,8 @@ describe('BsvS3Stack', () => {
     app = new cdk.App();
     stack = new BsvS3Stack(app, 'TestStack', {
       envName: 'test',
-      ingestionRoleArn: 'arn:aws:iam::123456789012:role/TestIngestionRole',
-      glueRoleArn: 'arn:aws:iam::123456789012:role/TestGlueRole',
+      ingestionRoleArn: 'arn:aws:iam::*********role/TestIngestionRole',
+      glueRoleArn: 'arn:aws:iam::**********:role/TestGlueRole',
     });
     template = Template.fromStack(stack);
   });
