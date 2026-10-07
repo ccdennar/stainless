@@ -107,5 +107,7 @@
     "@aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault": false,
     "@aws-cdk/customresources:installLatestAwsSdkDefault": false,
     "@aws-cdk/s3-notifications:addS3TrustKeyPolicyForSnsSubscriptions": true
-  }
+  },
+  "ingestionRoleArn":"arn:aws:iam::********:role/FileXIngestionRole",
+  "glueRoleArn":"arn:aws:iam::********:role/GluwDataLakeRole"
 }
