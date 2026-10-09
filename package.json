@@ -12,18 +12,21 @@
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30",
     "@types/node": "^24.10.1",
-    "jest": "^30",
     "aws-cdk": "2.1142.0",
+    "jest": "^30",
     "tsx": "^4.23.0",
     "typescript": "~7.0.2"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.269.0",
-    "constructs": "^10.5.0"
+    "constructs": "^10.5.0",
+    "source-map-support": "^0.5.21"
   },
   "allowScripts": {
     "fsevents@2.3.3": true,
     "@swc/core@1.16.13": true,
-    "esbuild@0.28.2": true
+    "esbuild@0.28.2": true,
+    "@parcel/watcher@2.6.0": true,
+    "unrs-resolver@1.12.2": true
   }
 }

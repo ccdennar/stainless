@@ -1,5 +1,5 @@
 import * as cdk from 'aws-cdk-lib';
-import { Template, Match } from 'aws-cdk-lib/assertions';
+import { Template, Match, Tags } from 'aws-cdk-lib/assertions';
 import { BsvS3Stack } from '../lib/stacks/bsv-s3-stack';
 
 describe('BsvS3Stack', () => {
@@ -40,7 +40,7 @@ describe('BsvS3Stack', () => {
   });
 
   test('Applies mandatory enterprise tags', () => {
-    template.tagMatches({
+    Tags.fromStack(stack).hasValues({
       app: 'bsv',
       environment: 'test',
       'managed-by': 'aws-cdk',
